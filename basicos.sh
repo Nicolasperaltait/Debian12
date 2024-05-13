@@ -3,7 +3,7 @@
 echo "Debian basic packages"
 sudo apt update && sudo apt upgrade -y &&
 sudo apt install nala -y  && 
-sudo nala install wget git curl neofetch ufw clamav clamav-daemon font-manager zsh htop preload 
+sudo nala install wget git curl neofetch ufw clamav clamav-daemon font-manager zsh htop preload -y
 
 echo "Packages installed" 
 
