@@ -20,11 +20,16 @@ echo "----------- Instalación de fuentes para ZSH -----------"
 cd github/ && git clone https://github.com/Nicolasperaltait/ZSH-Fonts.git && cd ZSH-Fonts/
 
 
-mkdir -p ~/.local/share/fonts 
+#mkdir -p ~/.local/share/fonts 
 
-ls ttf/*  && fc-cache -f -v  # lista y actualiza cache de fuentes 
+#ls ttf/*  && fc-cache -f -v  # lista y actualiza cache de fuentes 
 
-cp -r github/debian12/ZSH-Fonsts/* ~/.local/share/fonts/ # esto copia todo el contenido en la carpeta fonts 
+#cp -r github/debian12/ZSH-Fonsts/* ~/.local/share/fonts/ # esto copia todo el contenido en la carpeta fonts 
+
+
+cd ZSH-Fonts/
+
+sudo mv * .ttf /usr/share/fonts
 
 fc-cache -f -v  && cd .. # Regresar a la carpeta original
 
