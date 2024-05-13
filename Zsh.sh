@@ -9,7 +9,7 @@ sudo apt install zsh curl -y
 
 # ========================================================================================================================= #
 echo "----------- Instalación de oh my zsh -----------"
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" -y 
 
 
 # ========================================================================================================================= #
