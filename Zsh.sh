@@ -15,30 +15,30 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 # ========================================================================================================================= #
 echo "----------- Instalación de fuentes para ZSH -----------"
 
+mkdir -p usr/share/fonts # Se crea si no existe la ruta. 
 
 # Clonar el repositorio zsh-font desde GitHub
 cd github/ && git clone https://github.com/Nicolasperaltait/ZSH-Fonts.git && cd ZSH-Fonts/
 
 
-#mkdir -p ~/.local/share/fonts 
+    #mkdir -p ~/.local/share/fonts 
 
-#ls ttf/*  && fc-cache -f -v  # lista y actualiza cache de fuentes 
+    #ls ttf/*  && fc-cache -f -v  # lista y actualiza cache de fuentes 
 
-#cp -r github/debian12/ZSH-Fonsts/* ~/.local/share/fonts/ # esto copia todo el contenido en la carpeta fonts 
+    #cp -r github/debian12/ZSH-Fonsts/* ~/.local/share/fonts/ # esto copia todo el contenido en la carpeta fonts 
 
 
-cd ZSH-Fonts/
+sudo mv * .ttf /usr/share/fonts # Movemos todos los archivos a la carpeta creada al inico. 
 
-sudo mv * .ttf /usr/share/fonts
-
-fc-cache -f -v  && cd .. # Regresar a la carpeta original
-
+fc-cache -f -v  # Actualizacion de cache de funtes de sistema. 
 
 echo "----------- Fuentes de ZSH instaladas -----------"
 
 
 # ========================================================================================================================= #
 echo "----------- Instalación de oh my zsh con curl -----------"
+
+cd .. # queda parado en ZSH-Fonts/
 
 # Clonado del repositorio
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
@@ -49,8 +49,6 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 
 # ========================================================================================================================= #
-
-
 echo "----------- Completa el archivo, ¡Mandale mecha! -----------"
 
 cd / && cd home/nicolas
