@@ -11,7 +11,7 @@ sudo apt -f purge 'kdeconnect*' -y &&
 
 echo "Purga individual"
 
-sudo apt remove kate gwenview gimp imagemagick uxterm vim sweeper spectacle sieveeditor kwallet konsole konqueror -y &&
+sudo apt purge kate gwenview gimp imagemagick uxterm vim sweeper spectacle sieveeditor kwallet konsole konqueror -y &&
 
 echo "Limpieza de paquetes obsoletos"
 
@@ -22,4 +22,6 @@ echo "Actualización de paquetes"
 sudo apt update && sudo apt upgrade -y
 
 echo "Proceso de limpieza y actualización completado."
+
+sudo reboot now 
 
