@@ -5,9 +5,9 @@
 
 echo "Purga por lotes "
 
-sudo apt -f purge 'akonadi*' &&
-sudo apt -f purge 'libreoffice*' &&
-sudo apt -f purge 'kdeconnect*'-y &&
+sudo apt -f purge 'akonadi*' -y &&
+sudo apt -f purge 'libreoffice*' -y &&
+sudo apt -f purge 'kdeconnect*' -y &&
 
 echo "Purga individual"
 
