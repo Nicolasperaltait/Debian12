@@ -15,4 +15,4 @@ cd Debian12
 
 sudo chmod 775 basicos.sh Cleaner.sh 
 
-sudo apt ./basicos.sh && sudo apt ./Cleaner.sh
+sudo apt ./basicos.sh && sudo apt ./Cleaner-KDE.sh
