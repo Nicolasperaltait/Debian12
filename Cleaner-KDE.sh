@@ -3,8 +3,8 @@
 # Este script es para limpiar la totalidad del bloatware en debian 12 KDE 
 
 echo "================== Purga por lotes =================="
-sudo nala -f purge 'akonadi*' -y 
-sudo nala -f purge 'libreoffice*' -y 
+sudo apt -f purge 'akonadi*' -y 
+sudo apt -f purge 'libreoffice*' -y 
 #sudo apt -f purge 'kdeconnect*' -y &&
 
 echo "================== Purga individual =================="
