@@ -13,6 +13,6 @@ git clone https://github.com/Nicolasperaltait/Debian12.git
 
 cd Debian12
 
-sudo chmod 775 basicos.sh Cleaner.sh 
+sudo chmod 775 basicos.sh && sudo chmod 775 Cleaner.sh 
 
 sudo apt ./basicos.sh && sudo apt ./Cleaner-KDE.sh
