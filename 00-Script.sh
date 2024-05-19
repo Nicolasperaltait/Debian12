@@ -1,6 +1,11 @@
 #!/bin/bash
 
+#============================================================================================================================#
+
 # Este script es el Principal y será el encargado de llamar a los demás scripts
+
+#============================================================================================================================#
+
 
 # Cambiamos al directorio home de Nicolas
 cd /home/nicolas
@@ -17,8 +22,8 @@ mv Debian12 github/
 # Cambiamos al directorio donde se movió el repositorio
 cd github/Debian12
 
-# Cambiamos los permisos de los scripts
-sudo chmod 775 basicos.sh && sudo chmod 775 Cleaner.sh 
+# Cambiamos los permisos de los scripts a ejecución
+sudo chmod 755 basicos.sh && sudo chmod 755 Cleaner-KDE.sh 
 
 # Ejecutamos los scripts
 sudo ./basicos.sh && sudo ./Cleaner-KDE.sh

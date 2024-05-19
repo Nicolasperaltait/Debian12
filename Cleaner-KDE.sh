@@ -25,3 +25,6 @@ echo "Proceso de limpieza y actualización completado."
 
 sudo reboot now 
 
+No sé si alguien lee esto, pero ahí va... 
+Trabajo en Sistemas💻 intento programar...
+Me gusta el café y mate amargo.. Como corresponder, cocino rico...  No seré lindo pero hago unos ñoquis tremendos.
