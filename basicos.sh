@@ -7,7 +7,7 @@ echo "=================== Actualizacion =================="
 sudo apt update && sudo apt upgrade -y &&
 
 echo "================== Instalacion Basicos =================="
-sudo apt install nala -y  && sudo nala install wget git curl ufw clamav clamav-daemon font-manager zsh htop preload kitty -y
+sudo apt install nala -y  && sudo install wget curl ufw clamav clamav-daemon font-manager zsh htop preload kitty -y
 
 # Configuraciones basicas
 
