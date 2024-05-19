@@ -11,10 +11,12 @@ echo "================== Purga individual =================="
 sudo nala purge kate gwenview gimp imagemagick uxterm vim sweeper spectacle sieveeditor kwallet konsole konqueror -y 
 
 echo "================== Limpieza de paquetes obsoletos =================="
-sudo apt autoremove && sudo apt autoclean && sudo apt clean -y 
+sudo apt autoremove && sudo apt autoclean
+
+sudo nala autopurge && sudo nala autoremove && sudo nala clean
 
 echo "================== Actualización de paquetes =================="
-sudo apt update && sudo apt upgrade -y
+sudo nala update && sudo nala upgrade -y
 
 echo "================== Proceso de limpieza y actualización completado. =================="
 

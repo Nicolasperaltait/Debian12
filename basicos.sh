@@ -26,4 +26,12 @@ sudo freshclam &&                        # Actualizar la base de datos de firmas
 sudo systemctl start clamav-freshclam && # Iniciar de nuevo el servicio de actualización de ClamAV
 sudo systemctl start clamav-daemon &&    # Habilitar y iniciar el servicio de ClamAV
 
+
+
+echo "================== Nala Ferch Configuration =================="
+
+sudo nala fetch && 
+
+
+
 echo "Basic configuration done"
