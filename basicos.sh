@@ -8,13 +8,16 @@ sudo apt update && sudo apt upgrade -y
 
 echo "================== Instalacion Basicos =================="
 sudo apt install nala -y 
-sudo install clamav -y && sudo apt install clamav-daemon -y
-sudo install wget curl ufw font-manager zsh htop preload kitty -y
+sudo nala install clamav -y && sudo nala install clamav-daemon -y
+sudo nala install wget curl ufw font-manager zsh htop preload kitty -y
 
 # Configuraciones basicas
 
 echo "================== Firewall configuration =================="
-sudo ufw enable && sudo ufw default deny incoming && sudo ufw default allow outgoing && 
+
+sudo ufw enable
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
 
 echo "================== Anti-Virus configuration =================="
 
