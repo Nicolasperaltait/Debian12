@@ -29,9 +29,10 @@ sudo systemctl start clamav-daemon &&    # Habilitar y iniciar el servicio de Cl
 
 
 echo "================== Nala Ferch Configuration =================="
+sudo nala fetch --auto
 
-sudo nala fetch && 
 
+#aca falta agregar el automatismo, los servers son 1 2 3 y darle S + enter
 
 
 echo "Basic configuration done"

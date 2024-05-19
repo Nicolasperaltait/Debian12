@@ -11,7 +11,7 @@ echo "================== Purga individual =================="
 sudo nala purge kate gwenview gimp imagemagick uxterm vim sweeper spectacle sieveeditor kwallet konsole konqueror -y 
 
 echo "================== Limpieza de paquetes obsoletos =================="
-sudo apt autoremove && sudo apt autoclean
+# sudo apt autoremove -y  && sudo apt autoclean -y 
 
 sudo nala autopurge && sudo nala autoremove && sudo nala clean
 
