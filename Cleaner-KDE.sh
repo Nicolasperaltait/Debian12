@@ -13,7 +13,7 @@ sudo nala purge kate gwenview gimp imagemagick uxterm vim sweeper spectacle siev
 echo "================== Limpieza de paquetes obsoletos =================="
 # sudo apt autoremove -y  && sudo apt autoclean -y 
 
-sudo nala autopurge && sudo nala autoremove && sudo nala clean
+sudo nala autopurge -y && sudo nala autoremove -y  && sudo nala clean -y 
 
 echo "================== Actualización de paquetes =================="
 sudo nala update && sudo nala upgrade -y
