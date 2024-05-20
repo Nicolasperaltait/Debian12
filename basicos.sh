@@ -8,7 +8,7 @@ sudo apt update && sudo apt upgrade -y
 echo "================== Instalacion Nala =================="
 sudo apt install nala -y 
 
-echo "================== Nala Ferch Configuration =================="
+echo "================== Nala Fetch Configuration =================="
 sudo nala fetch --auto #aca falta agregar el automatismo para auto aceptar.
 
 echo "================== Instalacion Basicos =================="
