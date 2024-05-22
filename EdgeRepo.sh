@@ -7,12 +7,11 @@
 #============================================================================================================================#
 
 # Actualizamos el sistema
-sudo apt update && sudo apt upgrade -y 
+sudo nala update && sudo nala upgrade -y 
 
 
 # instalacion de paquetes iniciales 
 sudo apt install software-properties-common apt-transport-https ca-certificates curl -y
-
 
 
 # instalamos el repositorio // Esto genera un archivo en la ruta /usr/share/keyring/microsoft.edge

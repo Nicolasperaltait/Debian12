@@ -23,7 +23,7 @@ mv Debian12 github/
 cd github/Debian12
 
 # Cambiamos los permisos de los scripts a ejecución
-sudo chmod 755 basicos.sh && sudo chmod 755 Cleaner-KDE.sh 
+sudo chmod 755 *
 
 # Ejecutamos los scripts
-sudo ./basicos.sh && sudo ./Cleaner-KDE.sh
+sudo ./basicos.sh && sudo ./Cleaner-KDE.sh && ./EdgeRepo.sh
