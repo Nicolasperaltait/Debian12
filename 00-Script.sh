@@ -26,4 +26,4 @@ cd github/Debian12
 sudo chmod 755 *
 
 # Ejecutamos los scripts
-sudo ./basicos.sh && sudo ./Cleaner-KDE.sh && ./EdgeRepo.sh
+sudo ./Basicos.sh && sudo ./Cleaner-KDE.sh && ./EdgeRepo.sh
