@@ -35,5 +35,3 @@ mv ~/.zshrc ~/github/Debian12/.zshrc
                             # sudo
                             # zsh-syntax-highlighting
                             # zsh-autosuggestions
-
-
