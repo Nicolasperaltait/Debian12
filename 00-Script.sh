@@ -6,11 +6,7 @@
 
 #============================================================================================================================#
 
-
-# Cambiamos al directorio home de Nicolas
-cd /home/nicolas # se puede cambiar por la ruta que elijan. 
-
-# Clonamos el repositorio directamente en el directorio home de Nicolas
+# Clonamos el repositorio
 git clone https://github.com/Nicolasperaltait/Debian12.git
 
 # Creamos el directorio github si no existe
@@ -26,4 +22,4 @@ cd github/Debian12
 sudo chmod 755 *
 
 # Ejecutamos los scripts
-sudo ./Basicos.sh && sudo ./Cleaner-KDE.sh && ./EdgeRepo.sh
+#sudo ./Basicos.sh && sudo ./Cleaner-KDE.sh && ./EdgeRepo.sh

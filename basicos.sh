@@ -9,11 +9,10 @@ echo "================== Instalacion Nala =================="
 sudo apt install nala -y 
 
 echo "================== Nala Fetch Configuration =================="
-sudo nala fetch --auto #aca falta agregar el automatismo para auto aceptar.
+sudo nala fetch --auto -y 
 
 echo "================== Instalacion Basicos =================="
 sudo nala install wget curl ufw font-manager zsh htop preload kitty -y
-
 
 
 # Configuraciones basicas
