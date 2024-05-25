@@ -9,8 +9,8 @@ mkdir -p usr/share/fonts
 cd / && cd home/nicolas/Debian12/Fonts-ttf/ && sudo cp *.ttf /usr/share/fonts && fc-cache -f -v
 
 # Se descarga oh my zsh con curl
-sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -y 
-
+sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -y
+ 
 # clonamos el repo de powelevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 

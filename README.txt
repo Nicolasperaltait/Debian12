@@ -1,5 +1,8 @@
 README.txt
 
+
+Descargar del repo: git clone https://github.com/Nicolasperaltait/Debian12.git
+
 El ejecutable principal es 00-Scripts.sh 
 
 Este contiene basicos y Cleaner-KDE, Sirve para setear el el entorno KDE y Borrar el Bloatware. 
