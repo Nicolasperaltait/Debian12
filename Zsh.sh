@@ -6,7 +6,13 @@ sudo nala install curl zsh  -y
 mkdir -p usr/share/fonts 
 
 # instalar fuentes 
-cd / && cd home/nicolas/Debian12/Fonts-ttf/ && sudo mv * .ttf /usr/share/fonts && fc-cache -f -v
+cd / && cd home/nicolas/Debian12/Fonts-ttf/ 
+
+
+&& sudo cp *.ttf /usr/share/fonts 
+
+
+&& fc-cache -f -v
 
 # Se descarga oh my zsh con curl
 sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -y &&
