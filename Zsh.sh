@@ -1,17 +1,15 @@
 #!/bin/bash
 
-# ============================================================================================================ #
-echo "----------- Instalación de ZSH -----------"
+# instalamos curl y zsh 
 sudo nala install curl zsh  -y
 
-# Se descarga oh my zsh
-
+# Se descarga oh my zsh con curl
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -y &&
-
+# clonamos el repo de powelevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k &&
 
+# Descargamos Plugins
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting && git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestion
 
-cd / && cd home/nicolas/github/Debian12 && 
-
-mv ~/.zshrc ~/github/Debian12/.zshrc
+# Nos ubicamos en el directorio correcto y copiamos el .zsh indicado y lo copiamos donde corresponde
+cd / && cd home/nicolas/github/Debian12 && mv ~/.zshrc ~/home/nicolas/.zshrc
