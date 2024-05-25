@@ -11,4 +11,4 @@
 sudo chmod 755 *
 
 # Ejecutamos los scripts
-#sudo ./Basicos.sh && sudo ./Cleaner-KDE.sh && ./EdgeRepo.sh
+sudo ./Basicos.sh && sudo ./Cleaner-KDE.sh && ./EdgeRepo.sh
