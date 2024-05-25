@@ -118,3 +118,6 @@ source $ZSH/oh-my-zsh.sh
 #Test GIt
 
 #test git 2 
+
+
+#test full gita
