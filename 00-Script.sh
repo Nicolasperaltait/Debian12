@@ -8,6 +8,7 @@
 
 
 # Cambiamos los permisos de los scripts a ejecución
+
 sudo chmod 755 *
 
 # Ejecutamos los scripts

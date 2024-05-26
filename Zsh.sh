@@ -20,3 +20,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 # Nos ubicamos en el directorio correcto y copiamos el .zsh indicado y lo copiamos donde corresponde
 cd / && cd home/nicolas/Debian12 && sudo mv .zshrc /home/nicolas/
 
+
+
+#test
