@@ -6,6 +6,9 @@
 
 #============================================================================================================================#
 
+# Revisar no instala de una 
+
+
 # Actualizamos el sistema
 sudo nala update && sudo nala upgrade -y 
 
