@@ -6,8 +6,7 @@
 
 #============================================================================================================================#
 
-# Revisar no instala de una 
-
+sudo apt install nala -y 
 
 # Actualizamos el sistema
 sudo nala update && sudo nala upgrade -y 
