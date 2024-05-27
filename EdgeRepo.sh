@@ -25,10 +25,4 @@ echo 'deb [signed-by=/usr/share/keyrings/microsoft-edge.gpg] https://packages.mi
 
 sudo nala update && sudo apt install microsoft-edge-stable -y
 
-
-
 echo "Instalacion Terminada, Ya puede usar Microsoft Edge"
-
-
-
-

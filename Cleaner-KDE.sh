@@ -19,6 +19,3 @@ echo "================== Actualización de paquetes =================="
 sudo nala update && sudo nala upgrade -y
 
 echo "================== Proceso de limpieza y actualización completado. =================="
-
-#sudo reboot now 
-

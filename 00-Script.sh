@@ -12,10 +12,10 @@
 sudo chmod 755 *
 
 # Ejecutamos los scripts
-sudo ./Start.sh && sudo ./Cleaner-KDE.sh && sudo ./Flatpak-KDE.sh
+sudo ./Start.sh && sudo ./Cleaner-KDE.sh && sudo ./EdgeRepo.sh && sudo ./Flatpak-KDE.sh 
 
 
 
 # Estos no estan funcionando bien. 
 
-# sudo ./EdgeRepo.sh &&  && sudo ./Zsh.sh
+# sudo ./Zsh.sh
