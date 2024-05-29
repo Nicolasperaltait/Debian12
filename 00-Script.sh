@@ -12,8 +12,4 @@
 sudo chmod 755 *
 
 # Ejecutamos los scripts
-sudo ./Start.sh && sudo ./Cleaner-KDE.sh && sudo ./EdgeRepo.sh && sudo ./OhMyZsh.sh && sudo ./PowerLvl10K.sh && sudo ./Flatpak-KDE.sh
-
-
-
-# git clone https://github.com/Nicolasperaltait/Debian12.git && cd Debian12/ && sudo chmod 755 00-Script.sh && sudo ./00-Script.sh
+sudo ./Start.sh && sudo ./Cleaner-KDE.sh && sudo ./EdgeRepo.sh && sudo ./Flatpak-KDE.sh && sudo ./Zsh.sh
