@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-# Actualizacion 
+# Actualizacion e Instalacion de paquetes basicos.
 echo "=================== Actualizacion =================="
 sudo apt update && sudo apt upgrade -y
 
@@ -12,10 +12,11 @@ echo "================== Nala Fetch Configuration =================="
 sudo nala fetch --auto -y 
 
 echo "================== Instalacion Basicos =================="
-sudo nala install wget curl ufw font-manager zsh htop preload kitty -y
+sudo nala install wget curl ufw font-manager zsh htop preload kitty -y && 
 
+sudo apt install xfce4 xfce4-goodies xorg dbus-x11 x11-xserver-utils 
 
-# Configuraciones basicas
+# Configuraciones basicas de seguridad.
 echo "================== Firewall configuration =================="
 
 
