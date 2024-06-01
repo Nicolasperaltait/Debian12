@@ -28,10 +28,14 @@ cd / && cd home/nicolas/Debian12/Dotfiles &&                                    
 
 sudo cp startwm.sh /etc/xrdp/startwm.sh &&                                              # Esto copia el archivo ya editado al path correspondiente. 
 
-sudo systemctl restart xrdp                                                             # Reiniciamos el servicio xrdp para que se apliquen los cambios. 
+sudo systemctl restart xrdp &&                                                          # Reiniciamos el servicio xrdp para que se apliquen los cambios. 
 
-sudo ufw allow from 192.168.1.0/24 to any port 3389                                     # Permitimos el acceso al puerto 3389 desde la red local.
+# sudo ufw allow from 192.168.1.0/24 to any port 3389                                   # Permitimos el acceso al puerto 3389 desde la red local.
 
+sudo ufw allow 3389                                                                     # Permitimos el acceso al puerto 3389 desde cualquier lugar. // NO SEGURO!!!!  
 
-echo "Reinicie el sistema para que los cambios tengan efecto."
+#=======================================================================================#        
+        
+                
+ echo "Reinicie el sistema para que los cambios tengan efecto."
 
