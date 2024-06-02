@@ -24,9 +24,9 @@ sudo apt install xrdp -y &&                                                     
 
 # sudo nano /etc/xrdp/startwm.sh &&                                                     # Editamos el archivo startwm.sh para cambiar el escritorio por defecto. 
 
-cd / && cd home/nicolas/debian12/Dotfiles &&                                            # Nos aseguramos que estemos en el path correcto. 
+cd / && cd home/nicolas/debian12/Dotfiles && chmod 755 startwm.sh                       # Nos aseguramos que estemos en el path correcto. 
 
-sudo cp startwm.sh /etc/xrdp/startwm.sh &&                                              # Esto copia el archivo ya editado al path correspondiente. 
+sudo cp -a -f startwm.sh /etc/xrdp/ &&                                                  # -a Copia archivo permisos y metadata // -f = Forza la copia, no se puede copiar si no existe el archivo. 
 
 sudo systemctl restart xrdp &&                                                          # Reiniciamos el servicio xrdp para que se apliquen los cambios. 
 
@@ -38,4 +38,3 @@ sudo ufw allow 3389                                                             
         
                 
  echo "Reinicie el sistema para que los cambios tengan efecto."
-
