@@ -1,4 +1,4 @@
-.#!/bin/sh
+#!/bin/sh
 # xrdp X session start script (c) 2015, 2017, 2021 mirabilos
 # published under The MirOS Licence
 
