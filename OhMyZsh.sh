@@ -11,7 +11,7 @@ sudo nala install curl zsh  -y
 mkdir -p usr/share/fonts 
 
 # instalar fuentes // las movemos delsde el repo al sistema // actualizamos el cache 
-cd / && cd home/nicolas/Debian12/Fonts-ttf/ && sudo cp *.ttf /usr/share/fonts && fc-cache -f -v &&
+cd / && cd home/nicolas/debian12/Fonts-ttf/ && sudo cp *.ttf /usr/share/fonts && fc-cache -f -v &&
 
 
 echo "=================== Iniciando la descarga de ohmyzsh - Esto puede tardar varios minutos ===================" && 
@@ -30,6 +30,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 
 # Nos ubicamos en el directorio correcto y copiamos el .zsh indicado y lo copiamos donde corresponde
-cd / && cd home/nicolas/Debian12/Dotfiles && sudo cp .zshrc /home/nicolas/ 
+cd / && cd home/nicolas/debian12/Dotfiles && sudo cp .zshrc /home/nicolas/ 
 
 echo "=================== Fin de la instalación de ohmyzsh ==================="
+

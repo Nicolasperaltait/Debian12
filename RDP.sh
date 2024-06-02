@@ -24,7 +24,7 @@ sudo apt install xrdp -y &&                                                     
 
 # sudo nano /etc/xrdp/startwm.sh &&                                                     # Editamos el archivo startwm.sh para cambiar el escritorio por defecto. 
 
-cd / && cd home/nicolas/Debian12/Dotfiles &&                                            # Nos aseguramos que estemos en el path correcto. 
+cd / && cd home/nicolas/debian12/Dotfiles &&                                            # Nos aseguramos que estemos en el path correcto. 
 
 sudo cp startwm.sh /etc/xrdp/startwm.sh &&                                              # Esto copia el archivo ya editado al path correspondiente. 
 
