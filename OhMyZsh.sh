@@ -25,5 +25,5 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 #======================================================================================================================================#
 cd / && cd home/nicolas/debian12/Dotfiles && sudo cp .zshrc /home/nicolas/
 
-echo "=================== Fin de la instalación de ohmyzsh ==================="
 
+echo "Fin de la instalación de ohmyzsh"
