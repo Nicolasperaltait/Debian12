@@ -2,11 +2,11 @@
 
 #=======================================================================================#
 
-# Se instalarada automatizacion de coneccion remota por protocolo RDP
+# automatizacion de protocolo RDP. 
 
 #=======================================================================================#
 
-# Si esto se ejecuta sin el script start se vee instalar el entorno xfce sino no tendra efecto, descomentar el comando de abajo en ese caso. 
+# Si esto se ejecuta sin el script start se debe instalar el entorno xfce sino no tendra efecto, descomentar el comando de abajo en ese caso. 
 
 
 # sudo apt update && sudo apt upgrade -y && sudo apt install xfce4 xfce4-goodies xorg dbus-x11 x11-xserver-utils
