@@ -7,7 +7,7 @@
 sudo apt update && sudo apt upgrade -y && sudo apt install nala -y                      
 sudo nala fetch --auto -y &&                                                               # Examina los servidores espejo y setea los 3 primeros por defecto. 
 sudo nala install wget curl ufw font-manager zsh htop preload kitty -y &&                  # Instala Paquetes basicos.
-sudo apt install xfce4 xfce4-goodies xorg dbus-x11 x11-xserver-utils                       # Instala el entorno de escritorio XFCE4 necesario para conectarse por RDP.
+sudo apt install xfce4 xfce4-goodies xorg dbus-x11 x11-xserver-utils -y                    # Instala el entorno de escritorio XFCE4 necesario para conectarse por RDP.
 
 #=======================================================================================#
 
