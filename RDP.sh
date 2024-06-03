@@ -9,7 +9,7 @@
 # Si esto se ejecuta sin el script start se debe instalar el entorno xfce sino no tendra efecto, descomentar el comando de abajo en ese caso. 
 
 
-# sudo apt update && sudo apt upgrade -y && sudo apt install xfce4 xfce4-goodies xorg dbus-x11 x11-xserver-utils
+ sudo apt update && sudo apt upgrade -y && sudo apt install xfce4 xfce4-goodies xorg dbus-x11 x11-xserver-utils &&
 
 #=======================================================================================#
 
@@ -20,11 +20,7 @@
 
 sudo apt install xrdp -y &&                                                             # instalacion del protocolo. 
 
-# sudo systemctl status xrdp &&                                                         # Verificamos el estado del servicio xrdp
-
-# sudo nano /etc/xrdp/startwm.sh &&                                                     # Editamos el archivo startwm.sh para cambiar el escritorio por defecto. 
-
-cd / && cd home/nicolas/debian12/Dotfiles && chmod 755 startwm.sh                       # Nos aseguramos que estemos en el path correcto. 
+cd / && cd home/nicolas/Debian12/Dotfiles && chmod 755 startwm.sh &&                    # Nos aseguramos que estemos en el path correcto. 
 
 sudo cp -a -f startwm.sh /etc/xrdp/ &&                                                  # -a Copia archivo permisos y metadata // -f = Forza la copia, no se puede copiar si no existe el archivo. 
 
@@ -32,7 +28,9 @@ sudo systemctl restart xrdp &&                                                  
 
 # sudo ufw allow from 192.168.1.0/24 to any port 3389                                   # Permitimos el acceso al puerto 3389 desde la red local.
 
-sudo ufw allow 3389                                                                     # Permitimos el acceso al puerto 3389 desde cualquier lugar. // NO SEGURO!!!!  
+sudo ufw allow 3389 &&                                                                  # Permitimos el acceso al puerto 3389 desde cualquier lugar. // NO SEGURO!!!!  
+
+sudo systemctl status xrdp &&                                                           # Verificamos el estado del servicio xrdp                                                                     # Permitimos el acceso al puerto 3389 desde cualquier lugar. // NO SEGURO!!!!  
 
 #=======================================================================================#        
         
