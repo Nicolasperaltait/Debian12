@@ -1,4 +1,4 @@
-/#!/bin/bash
+#!/bin/bash
 #======================================================================================================================================#
 
 # Es necesario tener instalado curl y zsh para poder descargar ohmyzsh.
