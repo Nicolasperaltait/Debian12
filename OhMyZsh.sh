@@ -16,14 +16,11 @@ echo "=== Descargando ohmyzsh - Esto puede tardar varios minutos ====" &&
 echo "y" | sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" &&                          # Descarga del repo y se da permisos para instalar
 
 #======================================================================================================================================#
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k &&             # clonamos el repo de powelevel10k
-
-#======================================================================================================================================#
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting &&    # Descargamos el plugin de sintaxis   
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestion                    # Descargamos el plugin de sugerencias
 
 #======================================================================================================================================#
-cd / && cd home/nicolas/debian12/Dotfiles && sudo cp .zshrc /home/nicolas/
+cd / && cd home/nicolas/debian12/Dotfiles && sudo cp -a -f .zshrc /home/nicolas/
 
 
 echo "Fin de la instalación de ohmyzsh"
