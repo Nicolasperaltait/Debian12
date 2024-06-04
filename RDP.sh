@@ -9,7 +9,7 @@
 # Si esto se ejecuta sin el script start se debe instalar el entorno xfce sino no tendra efecto, descomentar el comando de abajo en ese caso. 
 
 
- sudo apt update && sudo apt upgrade -y && sudo apt install xfce4 xfce4-goodies xorg dbus-x11 x11-xserver-utils &&
+ sudo apt update && sudo apt upgrade -y && sudo apt install xfce4 xfce4-goodies xorg dbus-x11 x11-xserver-utils -y &&
 
 #=======================================================================================#
 
@@ -22,7 +22,7 @@ sudo apt install xrdp -y &&                                                     
 
 cd / && cd home/nicolas/Debian12/Dotfiles && chmod 755 startwm.sh &&                    # Nos aseguramos que estemos en el path correcto. 
 
-sudo cp -a -f startwm.sh /etc/xrdp/ &&                                                  # -a Copia archivo permisos y metadata // -f = Forza la copia, no se puede copiar si no existe el archivo. 
+sudo cp -a -f startwm.sh /etc/xrdp &&                                                   # -a Copia archivo permisos y metadata // -f = Forza la copia, no se puede copiar si no existe el archivo. 
 
 sudo systemctl restart xrdp &&                                                          # Reiniciamos el servicio xrdp para que se apliquen los cambios. 
 
@@ -36,3 +36,4 @@ sudo systemctl status xrdp &&                                                   
         
                 
  echo "Reinicie el sistema para que los cambios tengan efecto."
+ 
