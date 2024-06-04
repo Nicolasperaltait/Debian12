@@ -1,32 +1,53 @@
 #!/bin/bash
+#======================================================================================================================================#
 
-# Instalamos curl y zsh
-echo "Instalando curl y zsh..."
-sudo nala install curl zsh -y
+# Es necesario tener instalado curl y zsh para poder descargar ohmyzsh.
 
-# Creamos el directorio para las fuentes si no existe
-echo "Creando el directorio para las fuentes..."
-mkdir -p /usr/share/fonts
+#======================================================================================================================================#
 
-# Instalamos las fuentes y actualizamos el cache
-echo "Instalando fuentes y actualizando el caché..."
-sudo cp /home/nicolas/Debian12/Fonts-ttf/*.ttf /usr/share/fonts && fc-cache -f -v
+sudo nala install curl zsh -y                                                                                                             # Instalamos curl y zsh 
 
-# Descargamos e instalamos Oh My Zsh automáticamente
-echo "Iniciando la descarga e instalación de Oh My Zsh - Esto puede tardar varios minutos..."
-yes | sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+mkdir -p /usr/share/fonts                                                                                                                 # Creamos el directorio donde se copiarán las fuentes
 
-# Clonamos el repositorio de Powerlevel10k
-echo "Clonando el repositorio de Powerlevel10k..."
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+cd /home/nicolas/debian12/Fonts-ttf/ && sudo cp *.ttf /usr/share/fonts && fc-cache -f -v                                                  # Instalar fuentes // las movemos del repo al sistema // actualizamos el cache 
 
-# Descargamos los plugins
-echo "Clonando el plugin zsh-syntax-highlighting..."
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+#======================================================================================================================================#
+echo "=== Descargando ohmyzsh - Esto puede tardar varios minutos ===="
 
-echo "Clonando el plugin zsh-autosuggestions..."
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# Descarga e instalación de Oh My Zsh
+if echo "y" | sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"; then
+    echo "Oh My Zsh instalado con éxito"
+else
+    echo "Error al instalar Oh My Zsh" >&2
+    exit 1
+fi
 
-# Copiamos el archivo .zshrc al directorio del usuario
-echo "Copiando el archivo .zshrc al directorio del usuario..."
-sudo cp /home/nicolas/Debian12/Dotfiles/.zshrc /home/nicolas/
+#======================================================================================================================================#
+
+# Descargamos el plugin de sintaxis
+if git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting; then
+    echo "Plugin zsh-syntax-highlighting descargado con éxito"
+else
+    echo "Error al descargar el plugin zsh-syntax-highlighting" >&2
+    exit 1
+fi
+
+# Descargamos el plugin de sugerencias
+if git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions; then
+    echo "Plugin zsh-autosuggestions descargado con éxito"
+else
+    echo "Error al descargar el plugin zsh-autosuggestions" >&2
+    exit 1
+fi
+
+#======================================================================================================================================#
+
+# Copiamos el archivo .zshrc personalizado
+if sudo cp -a -f /home/nicolas/debian12/Dotfiles/.zshrc /home/nicolas/; then
+    echo ".zshrc personalizado copiado con éxito"
+else
+    echo "Error al copiar el archivo .zshrc" >&2
+    exit 1
+fi
+
+echo "Fin de la instalación de ohmyzsh y configuración de Zsh"
