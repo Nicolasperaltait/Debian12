@@ -7,7 +7,7 @@
 
 sudo nala install curl zsh ufw -y                                                                                                      # Instalamos curl y zsh 
 
-mkdir -p /usr/share/fonts && cd / && cd /home/nicolas/Debian12/Fonts-ttf/ && sudo cp *.ttf /usr/share/fonts && fc-cache -f -v          # Instalar fuentes // las movemos del repo al sistema // actualizamos el cache 
+mkdir -p /usr/share/fonts/ttf && cd / && cd /home/nicolas/Debian12/Fonts-ttf/ && sudo cp *.ttf /usr/share/fonts/ttf && fc-cache -f -v          # Instalar fuentes // las movemos del repo al sistema // actualizamos el cache 
 
 #======================================================================================================================================#
 echo "=== Descargando ohmyzsh - Esto puede tardar varios minutos ===="
