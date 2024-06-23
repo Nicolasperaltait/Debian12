@@ -17,14 +17,9 @@ if echo "y" | sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh
 else
     echo "Error al instalar Oh My Zsh" >&2
     exit 1
-fi
-
-
+fi 
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-
-
-
 
 #======================================================================================================================================#
 
